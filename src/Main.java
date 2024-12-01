@@ -7,14 +7,15 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello and welcome!");
-        calculadora();
+        //calculadora();
+        //palindromo("teste");
     }
 
     public static void calculadora(){
         Scanner s = new Scanner(System.in);
         int primeiroNumero;
         int segundoNumero;
-        String op = "";
+        String op;
 
         try {
             System.out.println("Insira o primeiro numero:");
@@ -48,5 +49,24 @@ public class Main {
         }catch (InputMismatchException e){
             System.out.println("erro nos parâmetros de entrada!!");
         }
+    }
+
+    public static void palindromo(String palavra){
+        String word = palavra;
+        String reverseWord = "";
+        char caracter;
+
+        for(int i = 0; i < word.length() ; i++){
+            caracter = word.charAt(i);
+            reverseWord = caracter + reverseWord;
+        }
+
+        if(word.equals(reverseWord)){
+            String resultado = MessageFormat.format("{0} e {1} são palíndromos!", word, reverseWord);
+            System.out.println(resultado);
+        }else{
+            System.out.println("A palavra informada não é um palíndromo");
+        }
+
     }
 }
