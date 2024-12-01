@@ -9,6 +9,7 @@ public class Main {
         System.out.println("Hello and welcome!");
         //calculadora();
         //palindromo("teste");
+        fibonacci(0);
     }
 
     public static void calculadora(){
@@ -68,5 +69,21 @@ public class Main {
             System.out.println("A palavra informada não é um palíndromo");
         }
 
+    }
+
+    public static void fibonacci(int limite){
+        int fibo1 = 0;
+        int fibo2 = 1;
+        int contador = 0;
+        String fibo = "0 1";
+
+        while(contador < limite){
+            int next = fibo1 + fibo2;
+            fibo1 = fibo2;
+            fibo2 = next;
+            fibo += " " + next;
+            contador++;
+        }
+        System.out.println(fibo);
     }
 }
