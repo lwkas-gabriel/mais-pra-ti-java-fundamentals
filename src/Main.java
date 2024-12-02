@@ -10,7 +10,8 @@ public class Main {
         //calculadora();
         //palindromo("teste");
         //fibonacci(0);
-        inverteNumero();
+        //inverteNumero();
+        jogo();
     }
 
     public static void calculadora(){
@@ -111,5 +112,33 @@ public class Main {
         }
 
 
+    }
+
+    public static void anagramas(){
+
+    }
+
+    public static void jogo(){
+        try {
+            int numeroDoJogo;
+            Scanner s = new Scanner(System.in);
+            numeroDoJogo = (int)(Math.random() * 50 + 1);
+            System.out.println(numeroDoJogo);
+            int check = Integer.MAX_VALUE;
+
+            while(numeroDoJogo != check){
+                System.out.println("Qual o número escolhido pelo sistema?");
+                s = new Scanner(System.in);
+                check = s.nextInt();
+
+                if(numeroDoJogo != check){
+                    System.out.println("Errado, tente novamente!");
+                }else{
+                    System.out.println("Parabéns, você acertou!! O numero era "+ check + "!!");
+                }
+            }
+        }catch(Exception e){
+            System.out.printf("erro no input!");
+        }
     }
 }
