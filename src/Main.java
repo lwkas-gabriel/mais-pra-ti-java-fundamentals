@@ -11,7 +11,8 @@ public class Main {
         //palindromo("teste");
         //fibonacci(0);
         //inverteNumero();
-        jogo();
+        //jogo();
+        contadorPalavras();
     }
 
     public static void calculadora(){
@@ -140,5 +141,24 @@ public class Main {
         }catch(Exception e){
             System.out.printf("erro no input!");
         }
+    }
+
+    public static void contadorPalavras(){
+        Scanner s = new Scanner(System.in);
+        String frase;
+        int contador = 0;
+
+        System.out.println("Inserir texto: ");
+        frase = s.nextLine();
+
+        for(int i = 0; i < frase.length(); i++){
+            char ch = frase.charAt(i);
+
+            if(Character.isLetter(ch)){
+                contador++;
+            }
+        }
+
+        System.out.println("A quantidade letras no seu texto é de " + contador);
     }
 }
