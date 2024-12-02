@@ -9,7 +9,8 @@ public class Main {
         System.out.println("Hello and welcome!");
         //calculadora();
         //palindromo("teste");
-        fibonacci(0);
+        //fibonacci(0);
+        inverteNumero();
     }
 
     public static void calculadora(){
@@ -85,5 +86,30 @@ public class Main {
             contador++;
         }
         System.out.println(fibo);
+    }
+
+    public static void inverteNumero(){
+        try{
+            Scanner s = new Scanner(System.in);
+            int numero;
+
+            System.out.println("Inserir numero: ");
+            numero = s.nextInt();
+
+            String toReverse = Integer.toString(numero);
+            String reversed = "";
+
+            for(int i = toReverse.length() - 1; i >= 0; i--){
+                reversed += toReverse.charAt(i);
+            }
+
+            int numeroInvertido = Integer.parseInt(reversed);
+
+            System.out.print(numeroInvertido);
+        }catch(Exception e){
+            System.out.println("erro de input!");
+        }
+
+
     }
 }
