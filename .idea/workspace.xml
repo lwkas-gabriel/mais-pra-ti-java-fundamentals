@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92369508-3df3-4be6-9f96-3779147180a8" name="Changes" comment="atividade 6">
+    <list default="true" id="92369508-3df3-4be6-9f96-3779147180a8" name="Changes" comment="atividade 7">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -124,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733182106221</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="atividade 7">
+      <option name="closed" value="true" />
+      <created>1733182735698</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1733182735698</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -134,6 +142,7 @@
     <MESSAGE value="atividade 3" />
     <MESSAGE value="atividade 4" />
     <MESSAGE value="atividade 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="atividade 6" />
+    <MESSAGE value="atividade 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="atividade 7" />
   </component>
 </project>

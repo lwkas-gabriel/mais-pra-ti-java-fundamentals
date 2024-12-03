@@ -6,13 +6,14 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello and welcome!");
+        System.out.println("Olá e seja bem-vindo!!");
         //calculadora();
         //palindromo("teste");
         //fibonacci(0);
         //inverteNumero();
+        //anagramas();
         //jogo();
-        contadorPalavras();
+        //contadorPalavras();
     }
 
     public static void calculadora(){
@@ -116,6 +117,32 @@ public class Main {
     }
 
     public static void anagramas(){
+        Scanner s = new Scanner(System.in);
+        String firstWord;
+        String secondWord;
+
+        System.out.println("Inserir primeira palavra");
+        firstWord = s.next();
+
+        System.out.println("Inserir segunda palavra");
+        secondWord = s.next();
+
+        int contador = 0;
+
+        for(int i = 0; i < firstWord.length(); i++){
+            for(int j = 0; j < secondWord.length(); j++){
+                if(firstWord.charAt(i) == secondWord.charAt(j)){
+                    contador++;
+                    break;
+                }
+            }
+        }
+
+        if(contador == firstWord.length()){
+            System.out.println(firstWord +" e " + secondWord + " são anagramas");
+        }else{
+            System.out.println(firstWord +" e " + secondWord + " não são anagramas");
+        }
 
     }
 
